@@ -21,15 +21,18 @@ nav{display:flex;gap:12px}
 nav a{color:white;padding:8px 14px;border-radius:12px;text-decoration:none;font-weight:600;opacity:0.95;transition:background .18s,transform .15s,opacity .15s}
 nav a:hover{background:rgba(255,255,255,.12);transform:translateY(-3px);opacity:1}
 nav a.active{background:rgba(255,255,255,.18)}
+nav .butt.active{background:rgba(255,255,255,.18)}
+.active{background:rgba(255,255,255,.18)}
+.butt:hover{background:rgba(255,255,255,.12);transform:translateY(-3px);opacity:1}
 
-a,button{position:relative;overflow:hidden}
+/* a,button{position:relative;overflow:hidden}
 a::after,button::after{content:"";position:absolute;top:0;left:-120%;width:120%;height:100%;background:rgba(255,255,255,0.18);transform:skewX(-20deg);pointer-events:none}
 .wipe::after{animation:wipe .35s cubic-bezier(.4,0,.2,1)}
-@keyframes wipe{from{left:-120%}to{left:120%}}
+@keyframes wipe{from{left:-120%}to{left:120%}} */
 
 .hero{position:relative;color:white;padding:110px 0;background-image:linear-gradient(rgba(6,12,34,.48), rgba(6,12,34,.48)),url("https://franchiseguidehq.co.uk/wp-content/uploads/2020/10/32dd6118cf9ba3cbfbae0c4dd76d2810_gutters111.jpg");background-size:cover;background-position:center}
 .hero .container{z-index: 1;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.hero h1{font-size:42px;line-height:1.05;margin-bottom:12px}
+.hero h1{font-size:42px;line-height:1.05;margin-bottom:12px;position: relative}
 .hero p{font-size:17px;opacity:.95;margin-bottom:8px}
 
 .quote-box {
@@ -176,7 +179,9 @@ footer {
 
     .butt {
         margin: 0.2rem;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
+        padding: 0;
+
     }
 
     p {
@@ -189,6 +194,7 @@ footer {
     }
     h1 {
         margin: 0.2rem 1rem 0.5rem 1rem;
+        position: relative;
     }
 
     a[href^="tel:"] {
