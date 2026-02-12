@@ -109,6 +109,14 @@ a::after,button::after{content:"";position:absolute;top:0;left:-120%;width:120%;
     z-index: 0;
 } */
 
+button,
+a,
+input,
+.toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 .service * {
     position: relative;
     padding: 0.5rem;
